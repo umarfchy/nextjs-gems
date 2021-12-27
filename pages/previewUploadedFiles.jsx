@@ -1,3 +1,4 @@
+import styles from "../styles/placeCenter.module.css";
 import { useState, useRef, useEffect } from "react";
 
 export default function SingleUploadedFile() {
@@ -14,11 +15,10 @@ export default function SingleUploadedFile() {
     }
   }, [file]);
 
-  const defaultStyle = { width: "200px", height: "200px" };
-  const placeCenter = { display: "grid", placeItems: "center" };
+  const defaultStyle = { width: "200px", height: "200px", marginTop: "30px" };
 
   return (
-    <div style={{ ...placeCenter, marginTop: "20px" }}>
+    <div className={styles.placeCenter}>
       <input type="file" onChange={(e) => setFile(e.target.files[0])} />
       {
         //previews the image
