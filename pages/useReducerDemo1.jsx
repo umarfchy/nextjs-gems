@@ -1,4 +1,4 @@
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import styles from "../styles/placeCenter.module.css";
 
 const ACTIONS = {
