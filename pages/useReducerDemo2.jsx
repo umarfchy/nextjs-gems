@@ -1,6 +1,6 @@
 import { useState, useReducer } from "react";
 import { Todo } from "../components/useReducer-examples/Todo";
-// import styles from "../styles/placeCenter.module.css";
+import styles from "../styles/placeCenter.module.css";
 
 export const ACTIONS = {
   ADD_TODO: "add_todo",
@@ -45,7 +45,7 @@ export default function UseReducerDemo2() {
   }
 
   return (
-    <>
+    <div className={styles.placeCenter}>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -58,6 +58,6 @@ export default function UseReducerDemo2() {
       {todos.map((todo) => (
         <Todo key={todo.id} todo={todo} dispatch={dispatch} />
       ))}
-    </>
+    </div>
   );
 }
