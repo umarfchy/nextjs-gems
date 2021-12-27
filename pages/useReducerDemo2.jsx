@@ -45,19 +45,19 @@ export default function UseReducerDemo2() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input type="submit" />
-      <p> </p>
-      <p> </p>
-      <p> </p>
+    <>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input type="submit" />
+      </form>
+
       {todos.map((todo) => (
         <Todo key={todo.id} todo={todo} dispatch={dispatch} />
       ))}
-    </form>
+    </>
   );
 }
