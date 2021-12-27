@@ -12,4 +12,5 @@ Here, I'm collecting various implementation details and structures that I've ove
 
 <ul>
   <li>To see how to use <strong>Context Api</strong> check <a href="./pages/contextApiExample.jsx">contextApiExample.jsx</a></li>
+  <li>To preview an <strong>image, video, pdf</strong> as <strong>url</strong> on nextjs check <a href="./pages/previewUploadedFiles.jsx">previewUploadedFiles.jsx</a></li>
 </ul>
