@@ -36,7 +36,6 @@ export default function UseReducerDemo2() {
   //useReducer takes a fn as first argument and initial state as second argument
   const [todos, dispatch] = useReducer(reducer, []);
   const [name, setName] = useState("");
-  console.log(todos);
   function handleSubmit(e) {
     e.preventDefault();
     if (name) {
